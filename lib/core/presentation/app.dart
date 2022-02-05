@@ -1,5 +1,6 @@
 import 'package:daily_todo/core/presentation/routes/app_router.gr.dart';
 import 'package:device_preview/device_preview.dart';
+import 'package:flash/flash.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -21,6 +22,22 @@ class _AppState extends State<App> {
         routerDelegate: _appRouter.delegate(),
         routeInformationParser: _appRouter.defaultRouteParser(),
         useInheritedMediaQuery: true,
+        builder: (context, _) {
+          var child = _!;
+          final theme = Theme.of(context);
+          final isThemeDark = theme.brightness == Brightness.dark;
+          child = Toast(
+            navigatorKey: _appRouter.navigatorKey,
+            child: child,
+          );
+          return FlashTheme(
+            flashBarTheme: isThemeDark
+                ? const FlashBarThemeData.dark()
+                : const FlashBarThemeData.light(),
+            flashDialogTheme: const FlashDialogThemeData(),
+            child: child,
+          );
+        },
       ),
     );
   }
