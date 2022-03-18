@@ -11,7 +11,7 @@ dependencies:
     sdk: flutter
 
   # core dependencies
-  auto_route: ^3.2.2
+  auto_route: ^3.2.4
   riverpod: ^1.0.3
   flutter_riverpod: ^1.0.3
   freezed_annotation: ^1.1.0
@@ -20,25 +20,25 @@ dependencies:
   device_preview: ^1.0.0
   material_design_icons_flutter: ^5.0.6595
   flash: ^2.0.3+2
-  easy_localization: ^3.0.0
+  intl: ^0.17.0
 
   # theme
   google_fonts: ^2.3.1
   flex_color_scheme: ^4.2.0
 
   # firebase
-  firebase_core: ^1.12.0
-  firebase_auth: ^3.3.6
-  cloud_firestore: ^3.1.7
-  cloud_functions: ^3.2.6
-  firebase_database: ^9.0.6
+  firebase_core: ^1.13.1
+  firebase_auth: ^3.3.11
+  cloud_firestore: ^3.1.10
+  cloud_functions: ^3.2.10
+  firebase_database: ^9.0.8
 
   # authentication
-  google_sign_in: ^5.2.3
+  google_sign_in: ^5.2.4
 
   # image manipulation
-  image_picker: ^0.8.4+6
-  image_cropper: ^1.4.1
+  image_picker: ^0.8.4+11
+  image_cropper: ^1.5.0
   cached_network_image: ^3.2.0
 
   # unit test
@@ -49,10 +49,10 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.4
-  build_runner: ^2.1.7
-  auto_route_generator: ^3.2.1
+  build_runner: ^2.1.8
+  auto_route_generator: ^3.2.3
   freezed: ^1.1.1
-  json_serializable: ^6.1.4
+  json_serializable: ^6.1.5
 
 flutter:
   uses-material-design: true
