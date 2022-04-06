@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:daily_todo/core/presentation/app_theme.dart';
+import 'package:daily_todo/core/presentation/extensions/size_extension.dart';
 import 'package:daily_todo/core/presentation/routes/app_router.gr.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -17,7 +18,7 @@ class SignInPage extends StatelessWidget {
             Text(
               'Welcome to\nDaily To Do',
               style: AppTheme().welcomeTextThemeData.headline1?.copyWith(
-                    fontSize: 40,
+                    fontSize: 40.0.adaptiveTextSize(context),
                     fontWeight: FontWeight.w100,
                   ),
             ),
