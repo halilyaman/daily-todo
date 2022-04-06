@@ -20,6 +20,7 @@ class _AppState extends State<App> {
     return DevicePreview(
       enabled: kDebugMode,
       builder: (_) => MaterialApp.router(
+        debugShowCheckedModeBanner: false,
         theme: AppTheme().themeData,
         routerDelegate: _appRouter.delegate(),
         routeInformationParser: _appRouter.defaultRouteParser(),

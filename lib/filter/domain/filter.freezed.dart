@@ -145,8 +145,8 @@ class __$MyDayCopyWithImpl<$Res> extends _$FilterCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_MyDay implements _MyDay {
-  const _$_MyDay();
+class _$_MyDay extends _MyDay {
+  const _$_MyDay() : super._();
 
   @override
   String toString() {
@@ -249,8 +249,9 @@ class _$_MyDay implements _MyDay {
   }
 }
 
-abstract class _MyDay implements Filter {
+abstract class _MyDay extends Filter {
   const factory _MyDay() = _$_MyDay;
+  const _MyDay._() : super._();
 }
 
 /// @nodoc
@@ -272,8 +273,8 @@ class __$ImportantCopyWithImpl<$Res> extends _$FilterCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Important implements _Important {
-  const _$_Important();
+class _$_Important extends _Important {
+  const _$_Important() : super._();
 
   @override
   String toString() {
@@ -376,8 +377,9 @@ class _$_Important implements _Important {
   }
 }
 
-abstract class _Important implements Filter {
+abstract class _Important extends Filter {
   const factory _Important() = _$_Important;
+  const _Important._() : super._();
 }
 
 /// @nodoc
@@ -398,8 +400,8 @@ class __$PlannedCopyWithImpl<$Res> extends _$FilterCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Planned implements _Planned {
-  const _$_Planned();
+class _$_Planned extends _Planned {
+  const _$_Planned() : super._();
 
   @override
   String toString() {
@@ -502,8 +504,9 @@ class _$_Planned implements _Planned {
   }
 }
 
-abstract class _Planned implements Filter {
+abstract class _Planned extends Filter {
   const factory _Planned() = _$_Planned;
+  const _Planned._() : super._();
 }
 
 /// @nodoc
@@ -524,8 +527,8 @@ class __$AllCopyWithImpl<$Res> extends _$FilterCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_All implements _All {
-  const _$_All();
+class _$_All extends _All {
+  const _$_All() : super._();
 
   @override
   String toString() {
@@ -628,8 +631,9 @@ class _$_All implements _All {
   }
 }
 
-abstract class _All implements Filter {
+abstract class _All extends Filter {
   const factory _All() = _$_All;
+  const _All._() : super._();
 }
 
 /// @nodoc
@@ -651,8 +655,8 @@ class __$CompletedCopyWithImpl<$Res> extends _$FilterCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Completed implements _Completed {
-  const _$_Completed();
+class _$_Completed extends _Completed {
+  const _$_Completed() : super._();
 
   @override
   String toString() {
@@ -755,8 +759,9 @@ class _$_Completed implements _Completed {
   }
 }
 
-abstract class _Completed implements Filter {
+abstract class _Completed extends Filter {
   const factory _Completed() = _$_Completed;
+  const _Completed._() : super._();
 }
 
 /// @nodoc
@@ -777,8 +782,8 @@ class __$TasksCopyWithImpl<$Res> extends _$FilterCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Tasks implements _Tasks {
-  const _$_Tasks();
+class _$_Tasks extends _Tasks {
+  const _$_Tasks() : super._();
 
   @override
   String toString() {
@@ -881,6 +886,7 @@ class _$_Tasks implements _Tasks {
   }
 }
 
-abstract class _Tasks implements Filter {
+abstract class _Tasks extends Filter {
   const factory _Tasks() = _$_Tasks;
+  const _Tasks._() : super._();
 }

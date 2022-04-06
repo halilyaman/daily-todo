@@ -11,14 +11,15 @@ class AppTheme {
   final welcomeTextThemeData = GoogleFonts.poiretOneTextTheme();
 
   final themeData = ThemeData(
-    textTheme: GoogleFonts.basicTextTheme(),
+    textTheme: GoogleFonts.assistantTextTheme(),
     appBarTheme: const AppBarTheme(
       backgroundColor: AppColors.transparent,
       elevation: 0.0,
+      actionsIconTheme: IconThemeData(
+        color: AppColors.grey,
+      ),
     ),
     splashColor: AppColors.transparent,
-    highlightColor: AppColors.transparent,
-    hoverColor: AppColors.transparent,
   );
 }
 
@@ -27,4 +28,12 @@ class AppColors {
 
   static const transparent = Colors.transparent;
   static const black = Colors.black;
+  static const white = Colors.white;
+  static const yellow = Colors.yellow;
+  static const red = Colors.red;
+  static const green = Colors.green;
+  static const pink = Colors.pink;
+  static final purple = Colors.pink[200]!;
+  static const blue = Colors.blue;
+  static const grey = Colors.grey;
 }
