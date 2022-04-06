@@ -1,3 +1,6 @@
+import 'package:auto_route/auto_route.dart';
+import 'package:daily_todo/core/presentation/app_theme.dart';
+import 'package:daily_todo/core/presentation/routes/app_router.gr.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
@@ -13,8 +16,9 @@ class SignInPage extends StatelessWidget {
           children: [
             Text(
               'Welcome to\nDaily To Do',
-              style: Theme.of(context).textTheme.headline1?.copyWith(
+              style: AppTheme().welcomeTextThemeData.headline1?.copyWith(
                     fontSize: 40,
+                    fontWeight: FontWeight.w100,
                   ),
             ),
             const GoogleSignInButton(),
@@ -31,9 +35,11 @@ class GoogleSignInButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      iconSize: 100,
+      iconSize: 70,
       icon: const Icon(MdiIcons.google),
-      onPressed: () async {},
+      onPressed: () async {
+        AutoRouter.of(context).replace(const HomeRoute());
+      },
     );
   }
 }
